@@ -1,0 +1,148 @@
+.welcome-card ion-img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+.toolbar-container{
+  background: none !important;
+}
+.no-bg{
+  background:none !important;
+}
+/* Ionicon icons resizing css */
+.ion-1x { font-size: 12px !important;}
+.ion-2x { font-size: 24px !important;}
+
+.ion-icon {
+        font-size: 30px; //Preferred size here
+        height:1.5rem;
+        
+    }
+
+ion-content{
+    --ion-background-color:transparent;    
+}
+
+.ion-color-favorite {
+  --ion-color-base: var(--ion-color-favorite);
+  --ion-color-base-rgb: var(--ion-color-favorite-rgb);
+  --ion-color-contrast: var(--ion-color-favorite-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-favorite-contrast-rgb);
+  --ion-color-shade: var(--ion-color-favorite-shade);
+  --ion-color-tint: var(--ion-color-favorite-tint);
+}
+.toolbar-background{
+  background:transparent !important;
+}
+.toolbar-container{
+  background:transparent !important;
+}
+.toolbar-content{
+  background:transparent !important;
+}
+.icon{
+  display:inline-block;
+  height:1.5rem;
+  width:1.5rem;
+  background-repeat:no-repeat;
+  margin-right:1rem;
+}
+.icon-bell{
+  background:url("../../assets/alarm.svg");
+   background-repeat:no-repeat;
+}
+.icon-podium{
+  background:url("../../assets/podium.svg");
+  background-repeat:no-repeat;
+  background-size: contain;
+}
+.icon-football{
+  background:url("../../assets/football.svg");
+   background-repeat:no-repeat;
+}
+div {
+  ion-content: var(--ion-color-favorite-contrast);
+}
+.text-white{
+	color:white;
+}
+.bg-row1{
+  background:#ffffff;
+  opacity:0.8; 
+}
+.btn-font-size{
+  font-size:0.7rem;
+}
+.icon-team {
+    background:url("../../assets/team1.png");
+    background-size: contain;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-tabs-tab{
+  background:url("../../assets/soccer.svg");
+    background-size: contain;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.predict-title{
+  padding: 0.5rem;
+  background: #a2a0a0;
+  color: #ffffff;
+  text-align: center;
+  font-size:0.8rem;
+  font-weight:600;
+}
+.ion-color-gray {
+  --ion-color-base: #efefef;
+  --ion-color-contrast: #ffffff;
+}
+.q-quest{
+  font-size:0.9rem;
+}
+.q-title{
+  font-size:1rem;
+  font-weight:600;
+}
+.quest-card{
+  color:white !important;
+}
+.score-container{
+  position: relative;
+  text-align:center;
+  background:url("../../assets/banner.png");
+  height: 3.8rem;
+  background-repeat: no-repeat;   
+}
+.button-width{
+  min-width:90%;
+}
+.point{
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  color:#ffffff;
+}
+.btn-powerplay{
+  font-size:0.6rem;
+  color:white;
+}
+.text-white{
+  color:white; 
+}
+
+.ion-color-gborder {
+--ion-color-base: var(--ion-color-gray) !important;
+--ion-color-base-rgb: var(--ion-color-gray-rgb) !important;
+--ion-color-contrast: var(--ion-color-gray-contrast) !important;
+--ion-color-contrast-rgb: var(--ion-color-gray-contrast-rgb) !important;
+--ion-color-shade: var(--ion-color-gray-shade) !important;
+--ion-color-tint: var(--ion-color-gray-tint) !important;
+}
+ion-button{
+  --background  :red;
+}
+.border{
+  border: 1px solid #8c8b8b;
+}
