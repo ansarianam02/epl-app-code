@@ -1,3 +1,27 @@
+.page1{
+  display:block;
+}
+.page2{
+  display:none;
+}
+.page3{
+  display:none;
+}
+.page3{
+  display:none;
+}
+.base{
+  display:block;
+}
+.hide{
+  /*display:none;*/
+}
+.powerplay-banner{
+  background:url("../../assets/powerplay-unlocked.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 6rem;  
+}
 .welcome-card ion-img {
   max-height: 35vh;
   overflow: hidden;
@@ -86,17 +110,130 @@ div {
     background-repeat: no-repeat;
     background-position: center;
 }
+.icon-tabs-tab-win{
+  background:url("../../assets/soccer-win.svg");
+    background-size: contain;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-tabs-tab-lost{
+  background:url("../../assets/soccer-lost.svg");
+  background-size: contain;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-tabs-tab-red-border{
+  background:url("../../assets/soccer-red-border.svg");
+  background-size: contain;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-lock{
+  position:relative;
+}
+.icon-lock:after{
+  content: '';
+  position: absolute;
+  top: 0.3rem;
+  left: 0.4rem;
+  height: 1rem;
+  width: 1rem;
+  background: url("../../assets/locked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+.icon-energy{  
+  background: url("../../assets/green-energy-copy.svg");
+  background-size: 53%;
+  height: 2rem;
+  width: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: inline-block;
+  background-color: #ffffff;
+  border-radius: 6rem;
+}
+/*.icon-energy-selected{
+  position:relative;  
+}*/
+.icon-energy-selected{
+  background: url("../../assets/icon-energy-win.svg");
+  background-size: 53%;
+  height: 2rem;
+  width: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: inline-block;
+  background-color: #ffffff;
+  border-radius: 6rem;
+}
+.icon-energy:before{  
+  /*content:'';
+  display:inline-block;
+  position:absolute;
+  top:0;
+  left:0;
+  height:1rem;
+  width:1rem;
+  background:#ffffff;
+  border-radius:2px solid #fff;*/
+}
+.icon-energy.selected{
+  border:2px solid red;
+}
+.icon-energy.energy{  
+  top: 0.6rem;
+  margin: 0 0.2rem;
+}
 .predict-title{
-  padding: 0.5rem;
-  background: #a2a0a0;
+  padding: 0.5rem;  
   color: #ffffff;
   text-align: center;
   font-size:0.8rem;
   font-weight:600;
 }
+.selected-tab{
+  background: #a2a0a0;
+}
+.tab-row{
+  padding:0.5rem 0;
+}
 .ion-color-gray {
   --ion-color-base: #efefef;
-  --ion-color-contrast: #ffffff;
+  --ion-color-contrast: #ffffff;    
+}
+.football-player-copy{
+  background: url("../../assets/football-player-copy.svg");
+  height: 12rem;
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: center;
+}
+.text-h6{
+  font-size: 16px;
+  font-weight:550;
+}
+.instruct{
+  font-size:0.8rem;
+  line-height: 1.9;
+}
+button{
+  border-radius:0;
+}
+.btn-wrong-red{
+  border:1px solid red;  
+}
+.btn-success-green{
+ border:1px solid #28ae62;   
+}
+.btn-dark{
+  border:1px solid #ffffff;
 }
 .q-quest{
   font-size:0.9rem;
@@ -115,6 +252,9 @@ div {
   height: 3.8rem;
   background-repeat: no-repeat;   
 }
+.no-border{
+  border:none !important;
+}
 .button-width{
   min-width:90%;
 }
@@ -123,10 +263,12 @@ div {
   top: 50%;
   left: 15%;
   color:#ffffff;
+  font-size:0.8rem;
 }
 .btn-powerplay{
   font-size:0.6rem;
   color:white;
+  position:relative;
 }
 .text-white{
   color:white; 
@@ -145,4 +287,79 @@ ion-button{
 }
 .border{
   border: 1px solid #8c8b8b;
+}
+.red-border{
+  border:1px solid #fc0001;
+}
+.text-green{
+  color:#28ae62;
+  font-weight:550;
+  font-size:0.7rem;
+}
+.text-red{
+  color:#fc0001;
+  font-weight:550;
+  font-size:0.7rem;
+}
+.text-dark{
+  color:#ffffff;
+  font-weight:550;
+  font-size:0.7rem; 
+}
+.text-yellow{
+  color:#f1c40f;
+  font-weight:550;
+}
+.bg-dark{
+  background:#000000;
+}
+.bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  right: 0;
+}
+.bottom-padding{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.box{
+  border: 2px solid #8c8b8b;
+  margin: 0rem ;
+  padding: 0.1rem 0.3rem;
+  color: #ffffff;
+}
+.box.selected{
+  background:#fc0001;
+  border:2px solid #fc0001;
+  height: 4.8rem;
+  box-shadow: 1px 0px 4px 0px #fc0001;
+}
+.box .right-p,.box .wrong-p{
+  font-size:0.6rem;
+}
+.f-w-b{
+  font-weight:bold;
+}
+.banner{
+  background:url("../../assets/banner.svg");
+  background-repeat:no-repeat;
+  height:8rem;
+  margin-top:1rem;
+}
+.text-red-size{
+  color:#fc0001;
+  font-weight:550;
+}
+.text-goodie-name{
+   font-size: 12px;
+}
+.goodie{
+  padding:1rem;
+}
+.loader{
+  position:relative;
+}
+.loader:after{
+    background:url("../../assets/loader.gif");
 }

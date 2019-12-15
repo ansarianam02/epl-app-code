@@ -1,4 +1,4 @@
-<ion-content class="bg-black">
+<ion-content class="bg-black" style="display: ">
    
     <ion-card class="welcome-card">    
       <ion-grid>
@@ -20,7 +20,7 @@
           </ion-row>
       </ion-grid>
           
-       <ion-grid class="bg-row1">
+       <ion-grid class="bg-row1 base">
           <ion-row class="bg-row-row1">            
             <ion-col size="3">  
               <div class="ion-text-justify">
@@ -34,7 +34,7 @@
             </ion-col>
           </ion-row>                              
         </ion-grid>
-      <ion-grid>
+      <ion-grid class="base">
       <ion-row >
           <ion-col size="3">
              <div class="icon-team"></div>             
@@ -52,75 +52,283 @@
       </ion-row>
     </ion-grid>
 
-    <ion-grid>
-      <ion-row>
-        <ion-col class="predict-title" color="gray">
-          <div >PREDICTIONS</div>
-        </ion-col>
-
-        <ion-col>
-          <ion-button class="ion-margin-start btn-powerplay" color="danger" size="small">Powerplay</ion-button>
-        </ion-col>
-      </ion-row>
-       <ion-row class="border">
-         <ion-col>
-           <div class="icon-tabs-tab"></div>
-         </ion-col> 
-         <ion-col>
-           <div class="icon-tabs-tab"></div>
-         </ion-col> 
-         <ion-col>
-           <div class="icon-tabs-tab"></div>
-         </ion-col> 
-         <ion-col>
-           <div class="icon-tabs-tab"></div>
-         </ion-col> 
-         <ion-col>
-           <div class="icon-tabs-tab"></div>
-         </ion-col> 
-       </ion-row>
-    </ion-grid> 
-
-     <ion-grid>
-      <ion-row class="ion-margin">
-          <ion-col size="9">          
-              <div class="quest-card">
-                <div class="q-title">Prediction 1 </div>
-                <div class="q-quest">Will BOU tally the scoreboard by scoring a goal in first half?</div>
-
-               <ion-button class="ion-margin-top btn-font-size button-width" color="danger" size="large">Yes</ion-button><br/>
-                <ion-button class="ion-margin-top btn-font-size button-width" color="danger" size="large">No</ion-button>
-              </div> 
+    <div class="page3">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div class="powerplay-banner"></div>
           </ion-col>
+        </ion-row>  
+      </ion-grid>
 
-          <ion-col size="3">
-           <div class="">
-              <div class="score-container text-center">
-                <div class="point">60  Sec</div>
-              </div>
-            </div> 
+      <ion-grid>
+        <ion-row>
+          <ion-col size="1"></ion-col>
+          <ion-col size="10" class="justify-content-center">
+            <div class="instruct text-center text-white">
+              Use your <span class="icon-energy energy"></span>               powerplay tickets anytim in the game to predict outcomes in the next 60 seconds of the game
+            </div>
           </ion-col>
-      </ion-row>
-    </ion-grid>
+          <ion-col size="1"></ion-col>          
+        </ion-row>  
+      </ion-grid>
 
-    <ion-grid>
-      <ion-row>
-          <ion-col size="8" class="text-white ">
-            <div>5 predictions to go to unlock </div> 
-          </ion-col>
-          <ion-col size="4"> 
-            <ion-button class="ion-margin-start btn-powerplay" color="danger" size="small">Powerplay</ion-button>
-          </ion-col>
-      </ion-row>
-    </ion-grid>
+    </div>
 
-    <ion-grid color="dark">
-      <ion-row>
-        <ion-progress-bar color="danger" value="0.5"></ion-progress-bar>
-      </ion-row>
+    <div class="page2">
+      <ion-grid class="ion-margin">
+        <ion-row>
+          <ion-col size="3"></ion-col>
+          <ion-col size="6"  class="no-border justify-content-center text-center"><div class="football-player-copy text-center"></div></ion-col>
+          <ion-col size="3"></ion-col>
+        </ion-row>
+      </ion-grid>       
+    </div>
 
-    </ion-grid>
+    <div class="page1">
+        <ion-grid >
+          <ion-row>
+            <ion-col class="predict-title " color="gray">
+              <div >PREDICTIONS</div>
+            </ion-col>
+
+            <ion-col class="selected-tab justify-content-center">
+              <ion-button class="ion-margin-start btn-powerplay" color="danger" size="small">  
+                 <ion-icon slot="start" ios="ios-flash" md="md-flash"></ion-icon>
+                  Powerplay
+              </ion-button>
+                <span class="icon-lock"></span>
+            </ion-col>
+          </ion-row>
+           <ion-row class="border hide">
+             <ion-col>
+               <div class="icon-tabs-tab"></div>
+               <div class="score ion-text-center text-green"></div>
+             </ion-col> 
+             <ion-col>
+               <div class="icon-tabs-tab-lost"></div>
+               <div class="score ion-text-center text-red">LOST</div>
+             </ion-col> 
+             <ion-col>
+               <div class="icon-tabs-tab-red-border"></div>
+               <div class="score ion-text-center text-red"></div>
+             </ion-col> 
+             <ion-col>
+               <div class="icon-tabs-tab-lost"></div>
+               <div class="score ion-text-center text-red">+ 200</div>
+             </ion-col> 
+             <ion-col>
+               <div class="icon-tabs-tab-win"></div>
+               <div class="score ion-text-center text-green">+ 200</div>
+             </ion-col> 
+           </ion-row>
+
+           <ion-grid class="hide">
+          <ion-row class="ion-margin">
+              <ion-col size="9">          
+                  <div class="quest-card">
+                    <div class="q-title">Prediction 1 </div>
+                    <div class="q-quest">Will BOU tally the scoreboard by scoring a goal in first half?</div>
+
+                   <ion-button class="ion-margin-top btn-font-size button-width btn-wrong-red" color="gray" size="large"><span class="text-red">Yes</span>Yes</ion-button><br/>
+                    <ion-button class="ion-margin-top btn-font-size button-width btn-success-green" color="gray" size="large"><span class="text-green">No</span></ion-button>
+                     <ion-button class="ion-margin-top btn-font-size button-width btn-dark" color="dark" size="large"><span class="text-dark">No</span></ion-button>
+                  </div> 
+              </ion-col>
+
+              <ion-col size="3">
+               <div class="">
+                  <div class="score-container text-center">
+                    <div class="point">60  Sec</div>
+                  </div>
+                </div> 
+              </ion-col>
+          </ion-row>
+        </ion-grid>
+
+           <ion-row class="border tab-row">
+             <ion-col class="justify-content-center">
+               <div class="icon-energy selected"></div>               
+             </ion-col> 
+             <ion-col class="justify-content-center">
+               <div class="icon-energy"></div>              
+             </ion-col> 
+             <ion-col class="justify-content-center">
+               <div class="icon-energy"></div>              
+             </ion-col> 
+             <ion-col class="justify-content-center">
+               <div class="icon-energy"></div>              
+             </ion-col> 
+             <ion-col class="justify-content-center">
+               <div class="icon-energy"></div>              
+             </ion-col> 
+           </ion-row>
+        </ion-grid> 
+
+         <ion-grid class="">
+          <ion-row class="justify-content-center">
+            <ion-col>
+              <div class="text-white">What below event is going to happen in next 2 minutes?</div></ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col size="6">          
+                  <div class="box ion-text-center selected">
+                    <div class="ion-padding-top f-w-b">GOAL</div>  
+                    <div class="right-p">You have prediction Goal</div>
+                  </div> 
+              </ion-col>
+
+              <ion-col size="6">
+                  <div class="box ion-text-center">
+                    <div class="ion-padding-bottom ion-padding-top f-w-b">CORNER KICK</div>  
+                    <div class="right-p text-red">Right prediction +300 pts</div>
+                    <div class="wrong-p text-green">Wrong prediction -20 pts</div>                 
+                  </div> 
+              </ion-col>
+          </ion-row>
+
+          <ion-row>
+              <ion-col size="6">          
+                  <div class="box ion-text-center">
+                    <div class="ion-padding-bottom ion-padding-top f-w-b">FOUL</div>  
+                    <div class="right-p text-red">Right prediction +300 pts</div>
+                    <div class="wrong-p text-green">Wrong prediction -20 pts</div>                 
+                  </div> 
+              </ion-col>
+
+              <ion-col size="6">
+                  <div class="box ion-text-center">
+                    <div class="ion-padding-bottom ion-padding-top f-w-b">NONE OF THESE</div>  
+                    <div class="right-p text-red">Right prediction +300 pts</div>
+                    <div class="wrong-p text-green">Wrong prediction -20 pts</div>                 
+                  </div> 
+              </ion-col>
+          </ion-row>
+        </ion-grid>
+
+         <ion-grid class="border ion-margin-top page4">
+          <ion-row>
+              <ion-col text-center class="text-white  justify-content-center text-center">
+                <h5>CONGRATULATIONS!</h5>
+                  <div class="text-h6 ">
+                    Your instincts have made it BIG!</div>  
+                  <div class="ion-padding banner ion-margin-top">
+                    <div class="text-h6">You have won
+                      <br/><h3 class="text-yellow">300</h3>
+                      points</div>
+                  </div>                
+            </ion-col>
+          </ion-row>
+        </ion-grid>  
+
+        <ion-grid class="border ion-margin-top page4">
+          <ion-row>
+              <ion-col text-center class="text-white  justify-content-center text-center">
+                  <div class="text-h6 ">
+                    OOPS! <br/>
+                    Better luck next time</div>  
+                  <div class="ion-padding banner ion-margin-top ">
+                    <div class="text-h6">You have lost
+                      <br/><h3 class="text-red-size">- 20</h3>
+                      points</div>
+                  </div>                
+            </ion-col>
+          </ion-row>
+        </ion-grid>       
+
+        <ion-grid>
+          <ion-row>
+              <ion-col size="7" class="text-white ">
+                <div>5 predictions to go to unlock </div> 
+              </ion-col>
+              <ion-col size="5"> 
+                <ion-button class="ion-margin-start btn-powerplay" color="danger" size="small">   
+                  <ion-icon slot="start" ios="ios-flash" md="md-flash"></ion-icon>
+                  Powerplay</ion-button>
+              </ion-col>
+          </ion-row>
+        </ion-grid>        
+
+        <ion-grid color="dark">
+          <ion-row>
+            <ion-progress-bar color="danger" value="0.5"></ion-progress-bar>
+          </ion-row>
+
+        </ion-grid>
+    </div>
 
     </ion-card>
-    
+
+     <ion-grid class="bg-dark page2 bottom bottom-padding">
+          <ion-row>
+              <ion-col text-center class="text-white  justify-content-center text-center">
+                  <div class="text-h6">We will be back soon when the play resumes after</div>
+                  <h5 class="text-center">HALF TIME</h5>
+            </ion-col>
+          </ion-row>
+        </ion-grid> 
+</ion-content>
+
+
+
+<ion-content class="bg-black" style="display:none">
+   
+    <ion-card class="welcome-card">    
+      <ion-grid>
+           <ion-row>
+              <ion-col size="6">
+               <div class="text-white"><ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon> 
+               MY WINNINGS (6)</div>
+              </ion-col>
+           </ion-row>
+
+           <ion-row class="ion-margin-top">
+              <ion-col size="6">          
+                  <div class="box ion-text-center">
+                    <div class="goodie"><img src="../../assets/goodie.png"/></div>  
+                   <div class="text-goodie-name">Goodie Name</div>
+                  </div> 
+              </ion-col>
+              <ion-col size="6">          
+                  <div class="box ion-text-center">
+                    <div class="goodie"><img src="../../assets/goodie.png"/></div>  
+                   <div class="text-goodie-name">Goodie Name</div>
+                  </div> 
+              </ion-col>
+          </ion-row>
+
+           <ion-row class="ion-margin-top">
+              <ion-col size="6">          
+                  <div class="box ion-text-center">
+                    <div class="goodie"><img src="../../assets/goodie.png"/></div>  
+                    <div class="text-goodie-name">Goodie Name</div>
+                  </div> 
+              </ion-col>
+              <ion-col size="6">          
+                  <div class="box ion-text-center">
+                    <div class="goodie"><img src="../../assets/goodie.png"/></div>  
+                   <div class="text-goodie-name">Goodie Name</div>
+                  </div> 
+              </ion-col>
+          </ion-row>
+
+           <ion-row class="ion-margin-top">
+              <ion-col size="6">          
+                  <div class="box ion-text-center">
+                    <div class="goodie"><img src="../../assets/goodie.png"/></div>  
+                    <div class="text-goodie-name">Goodie Name</div>
+                  </div> 
+              </ion-col>
+              <ion-col size="6">          
+                  <div class="box ion-text-center">
+                    <div class="goodie"><img src="../../assets/goodie.png"/></div>  
+                   <div class="text-goodie-name">Goodie Name</div>
+                  </div> 
+              </ion-col>
+          </ion-row>
+
+      </ion-grid>
+          
+    </ion-card>          
+
 </ion-content>
