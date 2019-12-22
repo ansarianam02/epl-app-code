@@ -1,0 +1,68 @@
+
+<!--<ion-header>
+    <ion-toolbar text-center>
+      <ion-title>{{modalTitle}}</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+  
+  <ion-content padding class="bg-dark pop1" color="black" *ngIf="modelId==1">
+    <ion-grid>
+      <ion-row>
+        <ion-col text-center> {{this.modelId}}
+          <div class="better-luck-next-tim"></div>
+        
+        </ion-col>
+      </ion-row>
+      <ion-row justify-content-center text-center>
+        <h1 class="msg" padding margin text-center>Ooops!! <br/>
+        Hard luck this time</h1>
+      </ion-row>
+      <ion-row>
+        <ion-col text-center class="btn-viewAll">
+          <ion-button (click)="closeModal()">View all rewards</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+
+  <ion-content padding class="bg-dark pop2" color="black" *ngIf="modelId==2">
+    <ion-grid>
+      <ion-row>
+        <ion-col text-center>{{this.modelId}}
+          <div class="congratulations"></div>
+        </ion-col>
+      </ion-row>
+      <ion-row justify-content-center text-center>
+        <h1 class="msg" padding margin text-center>{{this.modelId}}You have won a <br/>
+          <span class="text-red">BookMyShow Gift <br/> Voucher of Rs. 500!</span>
+        </h1>
+      </ion-row>
+      <ion-row>
+        <ion-col text-center class="btn-viewAll">
+          <ion-button (click)="closeModal()" ion-text-lowercase>View all rewards</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+  
+
+ <ion-content padding class="bg-dark pop3" color="black" *ngIf="modelId==3">
+    <ion-grid>
+      <ion-row>
+        <ion-col text-center>
+          <div class="you-won-a-scratch-ca"></div>
+        </ion-col>
+      </ion-row>
+      <ion-row justify-content-center text-center>
+        <h1 class="msg-reward" padding margin text-center>CLICK HERE
+          <br/>TO SEE YOUR
+          <br/> REWARDS
+        </h1>
+      </ion-row>
+      <ion-row>
+        <ion-col text-center class="">
+          <div class="football-player-1"></div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>

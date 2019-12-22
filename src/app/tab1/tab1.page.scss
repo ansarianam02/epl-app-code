@@ -1,4 +1,4 @@
-.page1{
+/*.page1{
   display:block;
 }
 .page2{
@@ -12,9 +12,15 @@
 }
 .base{
   display:block;
-}
+}*/
 .hide{
   /*display:none;*/
+}
+.vertical-align-content > *
+{
+     display: flex!important;
+     align-content: center!important;
+     align-items: center!important;
 }
 .powerplay-banner{
   background:url("../../assets/powerplay-unlocked.svg");
@@ -90,8 +96,8 @@ div {
 	color:white;
 }
 .bg-row1{
-  background:#ffffff;
-  opacity:0.8; 
+  background:url("../../assets/rectangle.svg");
+  background-size: contain;
 }
 .btn-font-size{
   font-size:0.7rem;
@@ -102,6 +108,43 @@ div {
     height: 3rem;
     background-repeat: no-repeat;
     background-position: center;
+}
+.icon-tab-loader{
+  position:relative;
+}
+.icon-tab-loader::after{
+  content: '';
+  background: url("../../assets/loader.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1.5rem;
+  width: 2rem;
+  position: absolute;
+  top: 0.7rem;
+  left: 1rem;    
+}
+.icon-tab-energy-loader{
+  position:relative;
+}
+.icon-tab-energy-loader::after{
+  content: '';
+  background: url("../../assets/loader.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1.5rem;
+  width: 2rem;
+  position: absolute;
+  top: 0.2rem;
+  left: 0.05rem;
+}
+.timer{
+  background: url("../../assets/timer.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 9.5rem;
+  margin: 1rem 0 0;  
 }
 .icon-tabs-tab{
   background:url("../../assets/soccer.svg");
@@ -219,6 +262,9 @@ div {
   font-size: 16px;
   font-weight:550;
 }
+.text-h6-light{
+ font-size: 16px; 
+}
 .instruct{
   font-size:0.8rem;
   line-height: 1.9;
@@ -293,16 +339,28 @@ ion-button{
 }
 .text-green{
   color:#28ae62;
+}
+.text-green-font{
   font-weight:550;
   font-size:0.7rem;
 }
 .text-red{
   color:#fc0001;
-  font-weight:550;
-  font-size:0.7rem;
 }
+.text-red-font{
+  font-size:0.7rem;
+  font-weight:550;
+}
+
 .text-dark{
+  color:#000000;
+  font-weight:550;
+  font-size:0.7rem; 
+}
+.text-white{
   color:#ffffff;
+}
+.text-white-font{
   font-weight:550;
   font-size:0.7rem; 
 }
@@ -356,10 +414,4 @@ ion-button{
 }
 .goodie{
   padding:1rem;
-}
-.loader{
-  position:relative;
-}
-.loader:after{
-    background:url("../../assets/loader.gif");
 }

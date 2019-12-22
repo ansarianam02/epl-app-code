@@ -1,0 +1,84 @@
+.better-luck-next-tim{
+  background: url("../../assets/better-luck-next-tim.svg");
+	height: 5rem;
+	padding: 2rem 0rem;
+	margin: 5rem 0;
+	background-color: #000000;
+	background-repeat: no-repeat;
+	background-size: 100% 80%;
+	background-position: center;
+}
+.congratulations{
+  background: url("../../assets/congratulations.svg");
+	height: 3rem;
+    padding: 0rem 3rem;
+    margin: 5rem 0;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: 82% 100%;
+    background-position: center;
+}
+.you-won-a-scratch-ca{
+   background: url("../../assets/you-won-a-scratch-ca.png");
+  height: 3rem;
+    padding: 0rem 3rem;
+    margin: 5rem 0;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: 60% 100%;
+    background-position: center;
+}
+.msg::before{
+  content:'';
+  background: url("../../assets/group-10.svg");
+  background-repeat: no-repeat;
+  height: 8rem;
+  width: 22rem;
+  position: absolute;
+  top: 1rem;
+  left: -4.3rem;
+}
+.msg{
+  position:relative;
+	border: 2px solid #fc0001;
+  border-radius: 1rem;
+  padding: 2rem 0.8rem;
+  margin: 0rem 3rem;
+  font-size: 1.2rem;
+  background:#ffffff;
+}
+.bg-dark{
+  background:#000000;
+}
+.btn-viewAll{
+	margin-top:5rem;
+}
+ion-button{
+  --background  :red;
+  box-shadow: 0 0 10px 3px red;
+}
+ion-backdrop{
+	--background:#ffffff;
+  opacity:0.4;
+}
+.text-red{
+  color:#fc0001;
+ }
+ .msg-reward{
+    position:relative;
+    border-radius: 1rem;
+    padding: 2rem 1.8rem;
+    margin: 0rem 3rem;
+    font-size: 1.2rem;
+    background-color: rgba(252, 0, 1, 0.71);
+    color:white;
+  }
+  .football-player-1{
+    background: url("../../assets/football-player-1.svg");
+    background-repeat: no-repeat;
+    height: 8rem;
+    width: 22rem;
+    margin-top: 2rem;
+    background-position: center;
+    background-size: contain;
+  }
