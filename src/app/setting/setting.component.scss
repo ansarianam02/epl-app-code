@@ -25,7 +25,8 @@
     margin: 5rem 0;
     background-color: #000000;
     background-repeat: no-repeat;
-    background-size: 60% 100%;
+    background-size: 60
+    % 100%;
     background-position: center;
 }
 .msg::before{
@@ -82,3 +83,6 @@ ion-backdrop{
     background-position: center;
     background-size: contain;
   }
+ ion-content{
+    --background: transparent;
+}
